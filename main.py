@@ -16,7 +16,7 @@ def check_resources(customer_input):
     for keys in ingredients:
         if ingredients[keys] > resources[keys]:
             print(f"Sorry there is not enough {keys}.")
-            print(f"{thank_you}  \nLimitedCoffee Ltd. Services")
+            print(f"{thank_you}  \ LimitedCoffee Services Ltd.")
             quit()
 
 
@@ -28,7 +28,7 @@ def process_coins(quarters, dimes, nickle, pennies):
         print(f"Here is ${(payment - cost):.2f} in change.")
     elif payment < cost:
         print("Sorry that's not enough money. Money refunded.")
-        print(f"{thank_you}  \nLimitedCoffee Ltd. Services")
+        print(f"{thank_you}  \ LimitedCoffee Services Ltd.")
         quit()
     else:
         print("Thank you for paying.")
@@ -59,7 +59,7 @@ while not off:
     elif customer_input == "off":
         off = True
         os.system('cls')
-        print(f"{thank_you}  \nLimitedCoffee Ltd. Services")
+        print(f"{thank_you}  \ LimitedCoffee Services Ltd.")
     else:
         check_resources(customer_input)
         process_resource(customer_input)
